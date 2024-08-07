@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-style: oblique;
+}
+a:hover{
+    color: red;
+    text-decoration: dashed red underline;
+    border-bottom: 3px red solid;
+}
+a:active{
+    color: rgba(62, 212, 62, 0.795);
+    text-decoration: dashed rgba(62, 212, 62, 0.795) underline;
+    border-bottom: 3px rgba(62, 212, 62, 0.795) solid;
+}
+.j:hover{
+    color: goldenrod;
+    text-decoration: dashed goldenrod underline;
+    border-bottom: 3px goldenrod solid;
+}
+.j:active{
+    color: rgba(62, 212, 62, 0.795);
+    text-decoration: dashed rgba(62, 212, 62, 0.795) underline;
+    border-bottom: 3px rgba(62, 212, 62, 0.795) solid;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.753),rgba(255, 255, 255, 0.753),rgba(0, 128, 0, 0.774));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.555);
+    clip-path: circle(40% at left 70%);
+    z-index: -1;
+}
+.div{
+    height: 80%;
+    width: 90%;
+    background: linear-gradient(to right,rgba(11, 10, 34, 0.400) 30%,rgba(0, 0, 0, 0.400))
+    ,url('img.png') no-repeat right;
+    background-size: contain;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.div:hover{
+    background: linear-gradient(to right,rgba(11, 10, 34, 0.616),transparent 70%)
+    ,url('img.png') no-repeat right;
+    background-size: contain;
+}
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+li{
+    display: inline;
+    list-style-type: none;
+    font-size: 18px;
+    margin: 0 20px;
+}
+.content{
+    width: 50%;
+    margin-top: 40px;
+    padding: 30px;
+}
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+p{
+    letter-spacing: 2px;
+    padding: 20px 0;
+    line-height: 25px;
+    width: 300px;
+}
+/* logo */
+@media (min-width:426px) and (max-width:820px) {
+    nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    li{
+        margin: 0 10px;
+    }
+    .logo{
+        margin-bottom: 5px;
+    }
+}
+@media (min-width:337px) and (max-width:425px) {
+    nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    li{
+        margin: 0 2px;
+    }
+    .logo{
+        margin-bottom: 5px;
+    }
+}
+@media (min-width:0px) and (max-width:336px) {
+    nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    li{
+        margin: 0;
+    }
+    .logo{
+        margin-bottom: 5px;
+    }
+}
+@media (min-width:185px) and (max-width:260px) {
+    .logo{
+        font-size: 20px;
+    }
+}
+@media (min-width:0px) and (max-width:184px) {
+    .logo{
+        font-size: 15px;
+    }
+    li{
+        font-size: 15px;
+    }
+}
+/* content */
+@media (min-width:0px) and (max-width:820px) {
+    .content{
+        margin-top: 20px;
+    }
+}
+@media (min-width:0px) and (max-width:483px) {
+    h2{
+        font-size: 35px;
+    }
+}
+@media (min-width:312px) and (max-width:367px) {
+    p{
+        width: 250px;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
+@media (min-width:0px) and (max-width:311px) {
+    p{
+        width: 200px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .content{
+        margin-top: 0;
+    }
+}
+@media (min-width:190px) and (max-width:259px) {
+    p{
+        font-size: 8px;
+        width: 150px;
+    }
+    h2{
+        font-size: 15px;
+    }
+}
+@media (min-width:0px) and (max-width:189px) {
+    p{
+        font-size: 8px;
+        width: 120px;
+    }
+    h2{
+        font-size: 15px;
+    }
+}
+@media (min-width:0px) and (max-width:158px) {
+    h2{
+        font-size: 13px;
+    }
+}
+@media (min-width:0px) and (max-width:164px) {
+    p{
+        width: 105px;
+        letter-spacing: 1px;
+    }
+}
