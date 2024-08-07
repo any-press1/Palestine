@@ -27,20 +27,11 @@ a:active{
     border-bottom: 3px rgba(62, 212, 62, 0.795) solid;
 }
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.753),rgba(255, 255, 255, 0.753),rgba(0, 128, 0, 0.774));
+    background: rgb(121, 6, 6);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-body::after{
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: rgba(255, 0, 0, 0.555);
-    clip-path: circle(40% at left 70%);
-    z-index: -1;
 }
 .div{
     height: 80%;
