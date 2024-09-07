@@ -146,7 +146,7 @@ h3{
         margin-right: 3px;
     }
 }
-@media (max-width:425px){
+@media (max-width:426px){
     h3{
         line-height: 40px;
         letter-spacing: 0;
